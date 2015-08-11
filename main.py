@@ -24,6 +24,6 @@ class MyHandler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     print "Start server"
-    httpd = HTTPServer(('127.0.0.1', 8000), MyHandler)
+    httpd = HTTPServer(('0.0.0.0', 8000), MyHandler)
     httpd.serve_forever()
     print "Started server"

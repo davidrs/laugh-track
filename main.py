@@ -3,13 +3,16 @@ import os
 from BaseHTTPServer import HTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 
+# Our libs
+import audio
+
 
 class MyHandler(SimpleHTTPRequestHandler):
     def translate_path(self, path):
         print "path: " + path
 
         if path == "/laugh":
-            self.play_laugh()
+            audio.play_laugh()
 
         elif path == "/todo":
             print "TODO: any action we want."
@@ -22,11 +25,6 @@ class MyHandler(SimpleHTTPRequestHandler):
         root = os.getcwd()
         # return unchanged path to get any appropriate files.
         return os.path.join(root, path)
-
-    # Plays a laugh track.     
-    def play_laugh(self):
-        print "TODO: play laugh audio"
-
 
 
 

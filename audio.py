@@ -1,5 +1,6 @@
-
+import time
 import pygame
+pygame.mixer.init()
 
 # Plays a laugh track.     
 def play_laugh():
@@ -9,3 +10,6 @@ def play_laugh():
     	pygame.mixer.music.play()
     else:
     	pygame.mixer.music.unpause()
+
+    time.sleep(6)
+    pygame.mixer.music.pause()

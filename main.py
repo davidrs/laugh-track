@@ -22,9 +22,10 @@ class MyHandler(SimpleHTTPRequestHandler):
 
 
 	    # default root -> cwd        
-        root = os.getcwd()
+        #root = os.getcwd()
+        #print root
         # return unchanged path to get any appropriate files.
-        return os.path.join(root, path)
+        return path[1:]
 
 
 

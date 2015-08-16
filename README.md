@@ -1,6 +1,8 @@
 # laugh-track
 Plays laugh track from raspi when button pushed or site visited.
 
+Set volume on raspi:
+amixer cset numid=1 -- -100
 
 ## Design doc
  - audio.py  # Plays the audio file

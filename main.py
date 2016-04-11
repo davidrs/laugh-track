@@ -17,15 +17,22 @@ class MyHandler(SimpleHTTPRequestHandler):
         if path == "/laugh":
             audio.play_laugh()
 
-        elif path == "/5-on":
-	    print "on 5"
-	    rf.on(5)
-        elif path == "/5-off":
-	    print "5 off"
-	    rf.off(5)
-        elif path == "/todo":
-            print "TODO: any action we want."
-
+        elif path == "/nick-on":
+	    rf.on(2)
+        elif path == "/nick-off":
+	    rf.off(2)
+        elif path == "/dave-on":
+	    rf.on(4)
+        elif path == "/dave-off":
+	    rf.off(4)
+        elif path == "/3-on":
+	    print "on 3"
+	    rf.on(3)
+        elif path == "/3-off":
+	    print "3 off"
+	    rf.off(3)
+        elif path == "/applause":
+	    audio.play_applause()
         else:
             print "Unkown command: " + path
 

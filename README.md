@@ -6,8 +6,9 @@ amixer cset numid=1 -- -100
 
 ## Setup
 
-Pin 7, (Bottom right non nick's pi) is for the manual tinfoil switch.
-Pin 17 for the Data on the transmitter.
+Pin 7, (Bottom right on Raspi B) is for the manual tinfoil switch.
+
+Pin 17 for the Data on the transmitter. (6th down on the left on Raspi B
 
 Original Raspi Wireless article:
 https://www.samkear.com/hardware/control-power-outlets-wirelessly-raspberry-pi

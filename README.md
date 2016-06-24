@@ -13,6 +13,12 @@ Pin 17 for the Data on the transmitter. (6th down on the left on Raspi B
 Original Raspi Wireless article:
 https://www.samkear.com/hardware/control-power-outlets-wirelessly-raspberry-pi
 
+Pin locations:
+https://www.google.com/search?q=pin+17+raspi+b&espv=2&biw=1436&bih=702&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj68oTq47_NAhUC7GMKHcIMB5IQ_AUIBigB#imgrc=oSXvaM-s5hJm8M%3A
+
+Visit:
+<ip of raspi>:8000/client/index.html
+
 ## Design doc
  - audio.py  # Plays the audio file
  - button.py # listens for the button press

@@ -6,9 +6,14 @@ amixer cset numid=1 -- -100
 
 ## Setup
 
+To scan for  RF numbers put the wire in Pin 22, just below Pin 17, 7th one down on the left of RaspiB)
+Then run sudo ./RFScanner
+
+
+
 Pin 7, (Bottom right on Raspi B) is for the manual tinfoil switch.
 
-Pin 17 for the Data on the transmitter. (6th down on the left on Raspi B
+Pin 17 for the Data on the transmitter. (6th down on the left on Raspi B)
 
 Original Raspi Wireless article:
 https://www.samkear.com/hardware/control-power-outlets-wirelessly-raspberry-pi

@@ -18,19 +18,17 @@ class MyHandler(SimpleHTTPRequestHandler):
             audio.play_laugh()
 
         elif path == "/nick-on":
-	    rf.on(2)
-        elif path == "/nick-off":
-	    rf.off(2)
-        elif path == "/dave-on":
 	    rf.on(4)
-        elif path == "/dave-off":
+        elif path == "/nick-off":
 	    rf.off(4)
-        elif path == "/3-on":
-	    print "on 3"
+        elif path == "/dave-on":
 	    rf.on(3)
-        elif path == "/3-off":
-	    print "3 off"
+        elif path == "/dave-off":
 	    rf.off(3)
+        elif path == "/living-room-on":
+	    rf.on(2)
+        elif path == "/living-room-off":
+	    rf.off(2)
         elif path == "/applause":
 	    audio.play_applause()
         else:
@@ -40,6 +38,7 @@ class MyHandler(SimpleHTTPRequestHandler):
 	    # default root -> cwd        
         #root = os.getcwd()
         #print root
+	# TODO: if path starts with client do this at the top, else return empty 200.
         # return unchanged path to get any appropriate files.
         return path[1:]
 
